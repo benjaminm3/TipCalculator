@@ -9,6 +9,11 @@
 #import "SettingsViewController.h"
 
 @interface SettingsViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *firstTextField;
+@property (weak, nonatomic) IBOutlet UITextField *secondTextField;
+@property (weak, nonatomic) IBOutlet UITextField *thirdTextField;
+- (IBAction)onTap:(id)sender;
+- (void)readValues;
 
 @end
 
@@ -26,6 +31,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self readValues];
+    [self updateValues];
+
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -35,4 +43,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)updateValues {
+    int firstPercentage = [self.firstTextField.text intValue];
+    int secondPercentage = [self.secondTextField.text intValue];
+    int thirdPercentage = [self.thirdTextField.text intValue];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setInteger:firstPercentage forKey:@"firstValue"];
+    [defaults setInteger:secondPercentage forKey:@"secondValue"];
+    [defaults setInteger:thirdPercentage forKey:@"thirdValue"];
+    [defaults synchronize];
+}
+
+- (IBAction)onTap:(id)sender {
+    [self.view endEditing:YES];
+    [self updateValues];
+}
+- (void)readValues {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *firstString = [NSString stringWithFormat:@"%i", [defaults integerForKey:@"firstValue"]];
+    NSString *secondString = [NSString stringWithFormat:@"%i", [defaults integerForKey:@"secondValue"]];
+    NSString *thirdString = [NSString stringWithFormat:@"%i", [defaults integerForKey:@"thirdValue"]];
+    self.firstTextField.text = firstString;
+    self.secondTextField.text = secondString;
+    self.thirdTextField.text = thirdString;
+}
 @end

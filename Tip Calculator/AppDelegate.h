@@ -1,5 +1,5 @@
 //
-//  QuizAppDelegate.h
+//  AppDelegate.h
 //  Tip Calculator
 //
 //  Created by Benjamin Chang on 2/22/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuizAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

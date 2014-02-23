@@ -12,13 +12,17 @@
 		473D6EFD18B964B800CF4AD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473D6EFC18B964B800CF4AD8 /* UIKit.framework */; };
 		473D6F0318B964B800CF4AD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 473D6F0118B964B800CF4AD8 /* InfoPlist.strings */; };
 		473D6F0518B964B800CF4AD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 473D6F0418B964B800CF4AD8 /* main.m */; };
-		473D6F0918B964B800CF4AD8 /* QuizAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 473D6F0818B964B800CF4AD8 /* QuizAppDelegate.m */; };
+		473D6F0918B964B800CF4AD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 473D6F0818B964B800CF4AD8 /* AppDelegate.m */; };
 		473D6F0B18B964B800CF4AD8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473D6F0A18B964B800CF4AD8 /* Images.xcassets */; };
 		473D6F1218B964B800CF4AD8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473D6F1118B964B800CF4AD8 /* XCTest.framework */; };
 		473D6F1318B964B800CF4AD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473D6EF818B964B800CF4AD8 /* Foundation.framework */; };
 		473D6F1418B964B800CF4AD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473D6EFC18B964B800CF4AD8 /* UIKit.framework */; };
 		473D6F1C18B964B800CF4AD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 473D6F1A18B964B800CF4AD8 /* InfoPlist.strings */; };
 		473D6F1E18B964B800CF4AD8 /* Tip_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 473D6F1D18B964B800CF4AD8 /* Tip_CalculatorTests.m */; };
+		473D6F2A18B965F600CF4AD8 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473D6F2818B965F600CF4AD8 /* TipViewController.m */; };
+		473D6F2B18B965F600CF4AD8 /* TipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 473D6F2918B965F600CF4AD8 /* TipViewController.xib */; };
+		473D6F2F18B997C800CF4AD8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473D6F2D18B997C800CF4AD8 /* SettingsViewController.m */; };
+		473D6F3018B997C800CF4AD8 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 473D6F2E18B997C800CF4AD8 /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +44,20 @@
 		473D6F0218B964B800CF4AD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		473D6F0418B964B800CF4AD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		473D6F0618B964B800CF4AD8 /* Tip Calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tip Calculator-Prefix.pch"; sourceTree = "<group>"; };
-		473D6F0718B964B800CF4AD8 /* QuizAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizAppDelegate.h; sourceTree = "<group>"; };
-		473D6F0818B964B800CF4AD8 /* QuizAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizAppDelegate.m; sourceTree = "<group>"; };
+		473D6F0718B964B800CF4AD8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		473D6F0818B964B800CF4AD8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		473D6F0A18B964B800CF4AD8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		473D6F1018B964B800CF4AD8 /* Tip CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		473D6F1118B964B800CF4AD8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		473D6F1918B964B800CF4AD8 /* Tip CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tip CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		473D6F1B18B964B800CF4AD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		473D6F1D18B964B800CF4AD8 /* Tip_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tip_CalculatorTests.m; sourceTree = "<group>"; };
+		473D6F2718B965F600CF4AD8 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		473D6F2818B965F600CF4AD8 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		473D6F2918B965F600CF4AD8 /* TipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipViewController.xib; sourceTree = "<group>"; };
+		473D6F2C18B997C800CF4AD8 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		473D6F2D18B997C800CF4AD8 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		473D6F2E18B997C800CF4AD8 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +117,16 @@
 		473D6EFE18B964B800CF4AD8 /* Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				473D6F0718B964B800CF4AD8 /* QuizAppDelegate.h */,
-				473D6F0818B964B800CF4AD8 /* QuizAppDelegate.m */,
+				473D6F0718B964B800CF4AD8 /* AppDelegate.h */,
+				473D6F0818B964B800CF4AD8 /* AppDelegate.m */,
 				473D6F0A18B964B800CF4AD8 /* Images.xcassets */,
 				473D6EFF18B964B800CF4AD8 /* Supporting Files */,
+				473D6F2718B965F600CF4AD8 /* TipViewController.h */,
+				473D6F2818B965F600CF4AD8 /* TipViewController.m */,
+				473D6F2C18B997C800CF4AD8 /* SettingsViewController.h */,
+				473D6F2D18B997C800CF4AD8 /* SettingsViewController.m */,
+				473D6F2E18B997C800CF4AD8 /* SettingsViewController.xib */,
+				473D6F2918B965F600CF4AD8 /* TipViewController.xib */,
 			);
 			path = "Tip Calculator";
 			sourceTree = "<group>";
@@ -220,8 +236,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473D6F2B18B965F600CF4AD8 /* TipViewController.xib in Resources */,
 				473D6F0318B964B800CF4AD8 /* InfoPlist.strings in Resources */,
 				473D6F0B18B964B800CF4AD8 /* Images.xcassets in Resources */,
+				473D6F3018B997C800CF4AD8 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				473D6F0518B964B800CF4AD8 /* main.m in Sources */,
-				473D6F0918B964B800CF4AD8 /* QuizAppDelegate.m in Sources */,
+				473D6F2A18B965F600CF4AD8 /* TipViewController.m in Sources */,
+				473D6F0918B964B800CF4AD8 /* AppDelegate.m in Sources */,
+				473D6F2F18B997C800CF4AD8 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +383,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tip Calculator/Tip Calculator-Prefix.pch";
 				INFOPLIST_FILE = "Tip Calculator/Tip Calculator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -376,6 +397,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tip Calculator/Tip Calculator-Prefix.pch";
 				INFOPLIST_FILE = "Tip Calculator/Tip Calculator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
